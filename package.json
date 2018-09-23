@@ -1,0 +1,28 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "description": "My implementation on the hello-next tutorial project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathansick/hello-next.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathansick/hello-next/issues"
+  },
+  "homepage": "https://github.com/jonathansick/hello-next#readme",
+  "dependencies": {
+    "next": "^7.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
