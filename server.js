@@ -9,6 +9,14 @@ app.prepare()
 .then(() => {
   const server = express()
 
+  // Routing for blog URLs
+  // This transforms the /p/:id URLs into /post URLs that the next app expects
+  server.get('/p/:id', (req, res) => {
+      const actualPage = '/post'
+      const queryParams = { title: req.params.id }
+      app.render(req, res, actualPage, queryParams)
+  })
+
   server.get('*', (req, res) => {
     return handle(req, res)
   })
