@@ -4,10 +4,9 @@
   "description": "My implementation on the hello-next tutorial project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,7 @@
   },
   "homepage": "https://github.com/jonathansick/hello-next#readme",
   "dependencies": {
+    "express": "^4.16.3",
     "next": "^7.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
